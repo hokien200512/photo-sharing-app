@@ -9,7 +9,7 @@ function UserDetail() {
   const user = models.userModel(userId);
 
   if (!user) {
-    return <span>Không tìm thấy người dùng.</span>;
+    return <Typography variant="body1">User not found.</Typography>;
   }
 
   return (
@@ -17,16 +17,22 @@ function UserDetail() {
       <Typography variant="h4" gutterBottom>
         {user.first_name} {user.last_name}
       </Typography>
-      <p><b>Nghề nghiệp:</b> {user.occupation}</p>
-      <p><b>Địa chỉ:</b> {user.location}</p>
-      <p><b>Mô tả:</b> {user.description}</p>
+      <Typography variant="body1">
+        <b>Location:</b> {user.location}
+      </Typography>
+      <Typography variant="body1">
+        <b>Description:</b> {user.description}
+      </Typography>
+      <Typography variant="body1">
+        <b>Occupation:</b> {user.occupation}
+      </Typography>
       <div style={{ marginTop: 20 }}>
         <Button
           variant="contained"
           component={Link}
           to={`/photos/${user._id}`}
         >
-          Xem ảnh của {user.first_name}
+          See Photos
         </Button>
       </div>
     </div>

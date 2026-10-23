@@ -26,7 +26,7 @@ function TopBar() {
     <AppBar className="topbar-appBar" position="absolute">
       <Toolbar style={{ display: "flex", justifyContent: "space-between" }}>
         <Typography variant="h6" color="inherit">
-          Hồ Tuấn Hưng
+          Ho Tuan Hung
         </Typography>
         <Typography variant="h6" color="inherit">
           {context}

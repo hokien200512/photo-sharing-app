@@ -36,15 +36,15 @@ const App = () => {
                 />
                 <Route
                   path="/users"
-                  element={<Typography variant="body1">Vui lòng chọn một người dùng từ danh sách bên trái để xem chi tiết.</Typography>}
+                  element={<Typography variant="body1">Please select a user from the list.</Typography>}
                 />
                 <Route
                   path="/"
-                  element={<Typography variant="body1">Vui lòng chọn một người dùng từ danh sách bên trái để xem chi tiết.</Typography>}
+                  element={<Typography variant="body1">Please select a user from the list.</Typography>}
                 />
                 <Route
                   path="*"
-                  element={<Typography variant="body1">404: Không tìm thấy trang.</Typography>}
+                  element={<Typography variant="body1">404: Page Not Found</Typography>}
                 />
               </Routes>
             </Paper>
